@@ -1,3 +1,7 @@
+# Environment
+.env
+
+# IDE
 .idea
 .vscode
 .gigacode
