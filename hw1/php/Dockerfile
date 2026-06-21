@@ -20,4 +20,7 @@ RUN pecl install redis memcached && docker-php-ext-enable redis memcached
 # Устанавливаем Composer из образа, т.к. при установке через curl часто бывают ошибки
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 
+# Переопределяем стандартный порт на Unix-сокет
+COPY ./zz-docker.conf /usr/local/etc/php-fpm.d/zz-docker.conf
+
 WORKDIR /var/www/html
