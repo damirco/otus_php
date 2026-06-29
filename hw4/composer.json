@@ -1,0 +1,19 @@
+{
+    "name": "otus/hw4",
+    "description": "Composer package usage example",
+    "autoload": {
+        "psr-4": {
+            "Otus\\Hw4\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Damir",
+            "email": "damirpost@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "damirco/attr": "^0.1.0"
+    }
+}
