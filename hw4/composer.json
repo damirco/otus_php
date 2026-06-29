@@ -13,6 +13,7 @@
         }
     ],
     "require": {
+        "php": ">=8.1",
         "damirco/attr": "^0.1.0"
     }
 }

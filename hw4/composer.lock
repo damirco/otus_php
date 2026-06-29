@@ -4,21 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75896b721c0f4e35af82b57eb19977cf",
+    "content-hash": "dccfa1b756cfa78faf9c7cf5f23d23fc",
     "packages": [
         {
             "name": "damirco/attr",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/damirco/attr.git",
-                "reference": "c685c79e9d31e143401e7b2c117cd224ad8fa1ae"
+                "reference": "b8773e626a797dc9e6010320e67a4e00c0142009"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/damirco/attr/zipball/c685c79e9d31e143401e7b2c117cd224ad8fa1ae",
-                "reference": "c685c79e9d31e143401e7b2c117cd224ad8fa1ae",
+                "url": "https://api.github.com/repos/damirco/attr/zipball/b8773e626a797dc9e6010320e67a4e00c0142009",
+                "reference": "b8773e626a797dc9e6010320e67a4e00c0142009",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -41,9 +44,9 @@
             "description": "PHP Attributes Library Package",
             "support": {
                 "issues": "https://github.com/damirco/attr/issues",
-                "source": "https://github.com/damirco/attr/tree/v0.1.0"
+                "source": "https://github.com/damirco/attr/tree/v0.1.1"
             },
-            "time": "2026-06-28T16:00:43+00:00"
+            "time": "2026-06-29T20:31:04+00:00"
         }
     ],
     "packages-dev": [],
@@ -52,7 +55,9 @@
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": ">=8.1"
+    },
     "platform-dev": {},
     "plugin-api-version": "2.9.0"
 }
