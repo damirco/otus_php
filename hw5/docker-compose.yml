@@ -5,16 +5,42 @@ services:
       - "8080:80"
     volumes:
       - app-data:/var/www/html:ro
-      - php-socket:/var/run
     depends_on:
-      - php
+      - php-fpm-1
+      - php-fpm-2
+      - php-fpm-3
+      - php-fpm-4
 
-  php:
+  php-fpm-1:
     build: ./php
     volumes:
       - app-data:/var/www/html
-      - php-socket:/var/run
+    depends_on:
+      - redis
+
+  php-fpm-2:
+    build: ./php
+    volumes:
+      - app-data:/var/www/html
+    depends_on:
+      - redis
+
+  php-fpm-3:
+    build: ./php
+    volumes:
+      - app-data:/var/www/html
+    depends_on:
+      - redis
+
+  php-fpm-4:
+    build: ./php
+    volumes:
+      - app-data:/var/www/html
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
 
 volumes:
   app-data:
-  php-socket:
