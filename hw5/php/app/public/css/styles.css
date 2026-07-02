@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+form div {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 20rem;
+    height: 2rem;
+}
+
+button {
+    height: 2rem;
+}
+
+.result {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.result-correct {
+    color: darkgreen;
+    background-color: honeydew;
+    font-weight: bold;
+}
+
+.result-incorrect {
+    color: darkorange;
+    background-color: floralwhite;
+}
+
+.result-error {
+    color: darkred;
+    background-color: mistyrose;
+}

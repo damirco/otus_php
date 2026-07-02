@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Проверка парности скобок</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Проверка парности скобок</h1>
+
+        <?php if ( $result ) { ?>
+        <div class="result result-<?= $result['type'] ?>">
+            <?= $result['message'] ?>
+        </div>
+        <?php } ?>
+
+        <form action="/check" method="post">
+            <div>
+                <label for="string">Введите скобки:</label>
+                <input type="text" name="string" id="string" value="<?= htmlspecialchars($string) ?>" />
+            </div>
+            <div>
+                <button type="submit">Проверить</button>
+            </div>
+        </form>
+    </div>
+
+    <?php if ( http_response_code() === 405 ) { ?>
+    <script>
+        setTimeout(() => location.href = "/", 1000);
+    </script>
+    <?php } ?>
+</body>
+</html>

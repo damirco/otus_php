@@ -1,0 +1,46 @@
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - app-data:/var/www/html:ro
+    depends_on:
+      - php-fpm-1
+      - php-fpm-2
+      - php-fpm-3
+      - php-fpm-4
+
+  php-fpm-1:
+    build: ./php
+    volumes:
+      - app-data:/var/www/html
+    depends_on:
+      - redis
+
+  php-fpm-2:
+    build: ./php
+    volumes:
+      - app-data:/var/www/html
+    depends_on:
+      - redis
+
+  php-fpm-3:
+    build: ./php
+    volumes:
+      - app-data:/var/www/html
+    depends_on:
+      - redis
+
+  php-fpm-4:
+    build: ./php
+    volumes:
+      - app-data:/var/www/html
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+
+volumes:
+  app-data:
