@@ -13,11 +13,6 @@ function checkEmails(string $string, string &$message = ""): string
     $result = $emailSet->check();
     if ( $result['invalid'] ) {
         $message .= "Невалидные email-адреса: " . implode(", ", $result['invalid']);
-        $result = $emailSet->checkSyntax();
-        if ( $result['invalid'] ) {
-            $message .= "\nСинтаксически некорректные email-адреса: " . implode(", ", $result['invalid']);
-            return 'incorrect';
-        }
         return 'incorrect';
     }
     $message = "Все email-адреса являются валидными.";
