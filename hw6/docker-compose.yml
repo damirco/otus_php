@@ -1,0 +1,17 @@
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - app-data:/var/www/html:ro
+    depends_on:
+      - php-fpm
+
+  php-fpm:
+    build: ./php
+    volumes:
+      - app-data:/var/www/html
+
+volumes:
+  app-data:
