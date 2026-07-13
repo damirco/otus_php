@@ -1,0 +1,22 @@
+{
+    "name": "otus/hw6",
+    "description": "Email validation example",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Damir",
+            "email": "damirpost@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "damirco/emailcheck": "^0.1.0"
+    }
+}
