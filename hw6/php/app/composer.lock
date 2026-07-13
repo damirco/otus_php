@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "damirco/emailcheck",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/damirco/emailcheck.git",
-                "reference": "4be2acb791744e72371389d2e857784e1a861988"
+                "reference": "8237ecea41e0f3280b942cc7f6e6cd0e9234ef20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/damirco/emailcheck/zipball/4be2acb791744e72371389d2e857784e1a861988",
-                "reference": "4be2acb791744e72371389d2e857784e1a861988",
+                "url": "https://api.github.com/repos/damirco/emailcheck/zipball/8237ecea41e0f3280b942cc7f6e6cd0e9234ef20",
+                "reference": "8237ecea41e0f3280b942cc7f6e6cd0e9234ef20",
                 "shasum": ""
             },
             "require": {
@@ -45,9 +45,9 @@
             "description": "Validates email addresses",
             "support": {
                 "issues": "https://github.com/damirco/emailcheck/issues",
-                "source": "https://github.com/damirco/emailcheck/tree/v0.1.0"
+                "source": "https://github.com/damirco/emailcheck/tree/v0.1.1"
             },
-            "time": "2026-07-04T01:43:54+00:00"
+            "time": "2026-07-04T12:55:08+00:00"
         }
     ],
     "packages-dev": [],
